@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=0">
+
+    <title>地址管理</title>
+
+    <link href="../AmazeUI-2.4.2/assets/css/admin.css" rel="stylesheet" type="text/css">
+    <link href="../AmazeUI-2.4.2/assets/css/amazeui.css" rel="stylesheet" type="text/css">
+
+    <link href="../css/personal.css" rel="stylesheet" type="text/css">
+    <link href="../css/orstyle.css" rel="stylesheet" type="text/css">
+
+    <link rel="stylesheet" href="../css/new.css">
+    <link href="http://www.jq22.com/jquery/bootstrap-3.3.4.css" rel="stylesheet">
+    <script src="../AmazeUI-2.4.2/assets/js/jquery.min.js"></script>
+    <script src="../AmazeUI-2.4.2/assets/js/amazeui.js"></script>
+    <script src="../js/index.js"></script>
+    <script src="../js/address.js"></script>
+</head>
+<body>
+<div class="center">
+    <div class="col-main">
+        <div class="main-wrap ">
+
+            <div class="user-order">
+
+                <!--标题 -->
+                <div class="am-cf am-padding">
+                    <div class="am-fl am-cf">
+                        <strong class="am-text-danger am-text-lg"><a href="#" class="main-title">地址管理</a></strong>
+
+
+                    </div>
+                    <!-- <div class="toback"><a href="#">返回</a></div> -->
+                </div>
+                <hr/>
+                <!--主体-->
+
+                    <div class="e-address">
+                        <ul class="am-avg-sm-3" id="address_info">
+                            <!--<li>
+                                <div class="con">
+                                    <p>
+                                        <i></i><span>李三</span><i></i><span>123****3224</span>
+                                    </p>
+                                    <p>
+                                        <i></i><span>地址： 湖北省 武汉市 洪山区 雄楚大道666号(中南财经政法大学)</span>
+                                    </p>
+                                    <p>
+                                        <a href=""><i></i>编辑</a>|<a href=""><i></i>删除</a>
+                                    </p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="con">
+                                    <p>
+                                        <i></i><span>李三</span><i></i><span>123****3224</span>
+                                    </p>
+                                    <p>
+                                        <i></i><span>地址： 湖北省 武汉市 洪山区 雄楚大道666号(中南财经政法大学)</span>
+                                    </p>
+                                    <p>
+                                        <a href=""><i></i>编辑</a>|<a href=""><i></i>删除</a>
+                                    </p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="con">
+                                    <p>
+                                        <i></i><span>李三</span><i></i><span>123****3224</span>
+                                    </p>
+                                    <p>
+                                        <i></i><span>地址： 湖北省 武汉市 洪山区 雄楚大道666号(中南财经政法大学)</span>
+                                    </p>
+                                    <p>
+                                        <a href=""><i></i>编辑</a>|<a href=""><i></i>删除</a>
+                                    </p>
+                                </div>
+                            </li>-->
+
+                        </ul>
+                    </div>
+                    <div class="am-cf am-padding">
+                        <div class="am-fl am-cf">
+                            <strong class="am-text-danger am-text-lg"><a href="#">新增地址 / 修改地址</a></strong>
+
+
+                        </div>
+
+                    </div>
+                    <hr/>
+                    <div class="add-address">
+                        <form action="#" id="addressinfo">
+                            <div class="cell"><span>收货人</span><input type="text" id="name" placeholder="收货人"></div>
+                            <div class="cell"><span>手机号码</span><input type="text" id="phone" placeholder="电话"></div>
+                            <div class="cell"><span>所在地</span>
+                                <!--<select name="sheng" id="province">
+                                    <option value="">陕西</option>
+                                    <option value="">甘肃</option>
+                                    <option value="">陕西</option>
+                                </select>
+
+                                <select name="shi" id="city">
+                                    <option value="">西安</option>
+                                    <option value="">甘肃</option>
+                                    <option value="">陕西</option>
+                                </select>
+
+                                <select name="xian" id="county">
+                                    <option value="">长武</option>
+                                    <option value="">甘肃</option>
+                                    <option value="">陕西</option>
+                                </select>-->
+                                <div class="jq22-container">
+		                            <div class="container">
+                                        <form class="form-inline">
+                                        <div data-toggle="distpicker">
+                                            <div class="form-group">
+                                            <label class="sr-only" for="province2">Province</label>
+                                            <select class="form-control" id="province2" data-province="---- 选择省 ----"></select>
+                                            </div>
+                                            <div class="form-group">
+                                            <label class="sr-only" for="city2">City</label>
+                                            <select class="form-control" id="city2" data-city="---- 选择市 ----"></select>
+                                            </div>
+                                            <div class="form-group">
+                                            <label class="sr-only" for="district2">District</label>
+                                            <select class="form-control" id="district2" data-district="---- 选择区 ----"></select>
+                                            </div>
+                                        </div>
+                                        </form>
+		                            </div>
+                             </div>
+                            </div>
+                             <div class="cell"><span>邮政编码</span><input type="text" id="postCode" placeholder="邮政编码"></div>
+                            <div class="cell"><span>详细地址</span><textarea name="" id="address" cols="30" rows="10"></textarea></div>
+                            <p class="info">100字以内写出你的详细地址...</p>
+                            <p class="btn"><input type="button" value="保存" id="save"><input type="reset" value="取消" id="reset"></p>
+
+                        </form>
+
+                    </div>
+
+
+
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+    <div id="page1"></div>
+    <script>
+
+        $("#page1").load("index.html");
+    </script>
+    <script src="http://www.jq22.com/jquery/1.11.1/jquery.min.js"></script>
+	<script src="http://www.jq22.com/jquery/bootstrap-3.3.4.js"></script>
+	<script src="../js/distpicker.data.js"></script>
+	<script src="../js/distpicker.js"></script>
+	<script src="../js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=0">
+
+    <title>藏品详情</title>
+
+    <link href="../AmazeUI-2.4.2/assets/css/admin.css" rel="stylesheet" type="text/css">
+    <link href="../AmazeUI-2.4.2/assets/css/amazeui.css" rel="stylesheet" type="text/css">
+    <link href="../css/personal.css"  rel="stylesheet" type="text/css">
+    <link href="../css/orstyle.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="../css/new.css">
+    <script src="../AmazeUI-2.4.2/assets/js/jquery.min.js"></script>
+    <script src="../AmazeUI-2.4.2/assets/js/amazeui.js"></script>
+
+    <script src="../js/detail.js"></script>
+</head>
+<body>
+<div class="center">
+    <div class="col-main">
+        <div class="main-wrap add-collection">
+
+            <div class="user-order">
+
+                <!--标题 -->
+                <div class="am-cf am-padding">
+                    <div class="am-fl am-cf">
+                        <strong class="am-text-danger am-text-lg" id="center_title"><a href="#">藏品详情</a></strong>
+
+
+                    </div>
+                    <div class="toback"><a href="shopcollection.html">返回</a></div>
+                </div>
+                <hr/>
+                <!--主体-->
+
+                <div class="main">
+                    <div class="tab tab-head">
+                        <div class="order-top">
+                            <div class="th th-bg">
+                                藏品编号
+                            </div>
+                            <div class="th th-number">
+                                <input type="text" id="no" readonly value="">
+                            </div>
+                            <div class="th th-bg">
+                                藏品名称
+                            </div>
+                            <div class="th th-name">
+                                <input type="text" id="name" readonly value="">
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                    <div class="tab tab-head">
+                        <div class="order-top">
+                            <div class="th th-bg">
+                                藏品类别
+                            </div>
+                            <div class="th th-material">
+                                <input type="text" id="sortName" readonly value="">
+                            </div>
+                            <div class="th th-bg">
+                                材质
+                            </div>
+                            <div class="th th-weight">
+                                <input type="text" id="texture" readonly value="">
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+                    <div class="tab tab-head">
+                        <div class="order-top">
+                            <div class="th th-bg">
+                                尺寸
+                            </div>
+                            <div class="th th-material">
+                                <input type="text" id="size" readonly value="'">
+                            </div>
+                            <div class="th th-bg">
+                                数量
+                            </div>
+                            <div class="th th-weight">
+                                <input type="text" id="amount" readonly value="">
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+                    <div class="tab tab-head">
+                        <div class="order-top">
+                            <div class="th th-bg">
+                                重量
+                            </div>
+                            <div class="th th-material">
+                                <input type="text" id="weight" readonly value="">
+                            </div>
+                            <div class="th th-bg">
+                                价格
+                            </div>
+                            <div class="th th-weight">
+                                <input type="text" id="" readonly value="">
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+                    <div class="tab tab-info">
+                        <div class="th th-bg">
+                            介绍
+                        </div>
+                        <div class="th th-info">
+                            <textarea name="" id="intro" ></textarea>
+                        </div>
+
+
+
+                    </div>
+
+                    <div class="tab tab-img-info">
+                        <div class="th th-bg">
+                            图片
+                        </div>
+                        <div class="th th-info" id="grxxtu">
+                            <img src="" alt="">
+                            <img src="" alt="">
+                            <img src="" alt="">
+                            <img src="" alt="">
+                        </div>
+
+
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+    	<div id="page1"></div>
+		<script>
+        
+          $("#page1").load("index.html");
+           </script>
+</body>
+
+</html>

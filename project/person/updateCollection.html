@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=0">
+
+		<title>修改藏品</title>
+
+		 <link href="../AmazeUI-2.4.2/assets/css/admin.css" rel="stylesheet" type="text/css">
+		<link href="../AmazeUI-2.4.2/assets/css/amazeui.css" rel="stylesheet" type="text/css">
+
+			<link href="../css/personal.css" rel="stylesheet" type="text/css">
+			<link href="../css/orstyle.css" rel="stylesheet" type="text/css">
+
+			<link rel="stylesheet" href="../css/new.css">
+
+			<script src="../AmazeUI-2.4.2/assets/js/jquery.min.js"></script>
+			<script src="../AmazeUI-2.4.2/assets/js/amazeui.js"></script>
+			<script src="/artshop/portal/files/jquery.min.js" type="text/javascript"></script>
+		<script src="/artshop/plugins/jquery.form.min.js" type="text/javascript"></script>
+
+        <script src="../js/fileup.js"></script>
+		<script src="../js/detail.js"></script>
+		<script src="../js/jilian.js"></script>
+		<script src="../js/updatecoll.js"></script>
+	</head>
+<body>
+		<div class="center">
+			<div class="col-main">
+				<div class="main-wrap add-collection">
+
+					<div class="user-order">
+
+						<!--标题 -->
+						<div class="am-cf am-padding">
+							<div class="am-cf am-padding">
+							<div class="am-fl am-cf"><strong class="am-text-danger main-title am-text-lg" id="center_title">修改藏品</strong></div>
+								<div class="back"><a href="javascript:history.go(-1);">返回</a></div>
+						</div>
+						<hr/>
+
+						</div>
+						
+						<!--主体-->
+
+						<div class="tab tab-head">
+									<div class="order-top">
+										<div class="th th-bg">
+											藏品名称
+										</div>
+										<div class="th th-material">
+											<input type="text" id="name" required="required">
+										</div>
+										<div class="th th-bg">
+											藏品材质
+										</div>
+										<div class="th th-weight">
+											<input type="text" id="texture" required="required">
+										</div>
+
+									</div>
+
+
+								</div>
+						<div class="tab tab-head">
+							<div class="order-top">
+								<div class="th th-bg">
+									藏品年代
+								</div>
+								<div class="th th-material">
+									<input type="text" id="epoch" required="required">
+								</div>
+								<div class="th th-bg">
+									藏品作者
+								</div>
+								<div class="th th-weight">
+									<input type="text" id="author">
+								</div>
+
+							</div>
+
+
+						</div>
+						<div class="tab tab-head">
+							<div class="order-top">
+								<div class="th th-bg">
+									藏品尺寸
+								</div>
+								<div class="th th-material">
+									<input type="text" id="size" required="required">
+								</div>
+								<div class="th th-bg">
+									藏品重量
+								</div>
+								<div class="th th-weight">
+									<input type="text" id="weight" required="required">
+								</div>
+
+							</div>
+
+
+						</div>
+						<div class="tab tab-head">
+							<div class="order-top">
+								<div class="th th-bg">
+									藏品数量
+								</div>
+								<div class="th th-material">
+									<input type="text" id="amount" required="required">
+								</div>
+								<div class="th th-bg">
+									发布日期
+								</div>
+								<div class="th th-weight">
+									<input type="text" id="date" readonly="readonly">
+								</div>
+
+							</div>
+
+
+						</div>
+
+						<div class="tab tab-head">
+							<div class="order-top">
+								<div class="th th-bg">
+									一级类别
+								</div>
+								<div class="th th-material">
+									<select name="" id="y_one">
+										
+									</select>
+								</div>
+								<div class="th th-bg">
+									二级类别
+								</div>
+								<div class="th th-weight">
+									<select name="" id="y_two">
+										
+									</select>
+								</div>
+
+							</div>
+
+
+						</div>
+
+						<div class="tab tab-head">
+							<div class="order-top info">
+                                    简介:
+								</div>
+
+							</div>
+
+						<div class="tab tab-head">
+							<div class="order-top description">
+								<textarea name="shop-info" id="intro" cols="142" rows="10"></textarea>
+							</div>
+
+						</div>
+						<div class="tab tab-head">
+							<div class="order-top info">
+                                    上传图片:
+								</div>
+
+							</div>
+						<div  id="grxxtu">
+						<input type="hidden" id="photos" name="img_id" >
+						<img id="img_show1" src="images/photo_icon.png" width="150" height="150" onclick="$('#imgfile1').click();" />
+						<img id="img_show2" src="images/photo_icon.png" width="150" height="150" onclick="$('#imgfile2').click();" />
+						<img id="img_show3" src="images/photo_icon.png" width="150" height="150" onclick="$('#imgfile3').click();" />
+						<img id="img_show4" src="images/photo_icon.png" width="150" height="150" onclick="$('#imgfile4').click();" />
+						</div>
+			<!-- 图片上传表单 -->
+			<form enctype="multipart/form-data" id="form1" style="display: none">
+				<input type="file" required="required" accept="image/*" name="imgfile" id="imgfile1" onchange="uploadimg(1)"/>
+			</form>
+			<form enctype="multipart/form-data" id="form2" style="display: none">
+				<input type="file" required="required" accept="image/*" name="imgfile" id="imgfile2" onchange="uploadimg(2)"/>
+			</form>
+			<form enctype="multipart/form-data" id="form3" style="display: none">
+				<input type="file" required="required" accept="image/*" name="imgfile" id="imgfile3" onchange="uploadimg(3)"/>
+			</form>
+			<form enctype="multipart/form-data" id="form4" style="display: none">
+				<input type="file" required="required" accept="image/*" name="imgfile" id="imgfile4" onchange="uploadimg(4)"/>
+			</form>
+
+						<div class="info-btn">
+									<div class="am-btn am-btn-danger xg-btn" id="save" onclick="submit()">提交</div>
+								</div>
+
+
+						</div>
+
+
+								</div>
+
+
+					</div>
+
+			<div id="page1"></div>
+		   <script>
+            $("#page1").load("index.html");
+		   </script>
+		   
+		</div>
+</body>
+
+</html>

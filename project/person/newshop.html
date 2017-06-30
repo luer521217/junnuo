@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=0">
+
+    <title>我要开店</title>
+
+    <link href="../AmazeUI-2.4.2/assets/css/admin.css"
+          tppabs="http://demo.cssmoban.com/cssthemes4/amz_02_adp/two/AmazeUI-2.4.2/assets/css/admin.css"
+          rel="stylesheet" type="text/css">
+    <link href="../AmazeUI-2.4.2/assets/css/amazeui.css"
+          tppabs="http://demo.cssmoban.com/cssthemes4/amz_02_adp/two/AmazeUI-2.4.2/assets/css/amazeui.css"
+          rel="stylesheet" type="text/css">
+
+    <link href="../css/personal.css" tppabs="http://demo.cssmoban.com/cssthemes4/amz_02_adp/two/css/personal.css"
+          rel="stylesheet" type="text/css">
+    <link href="../css/orstyle.css" tppabs="http://demo.cssmoban.com/cssthemes4/amz_02_adp/two/css/orstyle.css"
+          rel="stylesheet" type="text/css">
+
+    <link rel="stylesheet" href="../css/new.css">
+
+    <script src="../AmazeUI-2.4.2/assets/js/jquery.min.js"
+            tppabs="http://demo.cssmoban.com/cssthemes4/amz_02_adp/two/AmazeUI-2.4.2/assets/js/jquery.min.js"></script>
+    <script src="../AmazeUI-2.4.2/assets/js/amazeui.js"
+            tppabs="http://demo.cssmoban.com/cssthemes4/amz_02_adp/two/AmazeUI-2.4.2/assets/js/amazeui.js"></script>
+    <script src="/artshop/portal/files/jquery.min.js" type="text/javascript"></script>
+    <script src="/artshop/plugins/jquery.form.min.js" type="text/javascript"></script>
+    <script src="../js/index.js"></script>
+    <script src="../js/fileup.js"></script>
+    <script src="../js/openshop.js"></script>
+</head>
+<body>
+<div class="center">
+    <div class="col-main">
+        <div class="main-wrap add-collection">
+
+            <div class="user-order">
+
+                <!--标题 -->
+                <div class="am-cf am-padding">
+                    <div class="am-fl am-cf">
+                        <strong class="am-text-danger am-text-lg"><a href="#">开店</a></strong>
+
+
+                    </div>
+                    <div class="toback"><a href="javascript:history.go(-1);">返回</a></div>
+                </div>
+                <hr/>
+                <!--主体-->
+
+                <div class="main">
+
+
+                        <div class="row row1">
+                            <div class="tit">店铺logo</div>
+                            <div class="con"><div  id="grxxtu">
+                                <input type="hidden" id="photos" name="img_id">
+                                <img id="img_show1" src="images/photo_icon.png" width="150" height="150" onclick="$('#imgfile1').click();">
+                            </div></div>
+                        </div>
+
+                        <div class="row row2">
+                            <div class="tit">店铺名称</div>
+                            <div class="con"><input type="text" id="name" value=""></div>
+                        </div>
+
+                        <div class="row row3">
+                            <div class="tit" >店铺主营</div>
+                            <div class="con">
+                                <label><input type="checkbox" name="ziying" value="陶瓷">陶瓷</label>
+                                <label><input type="checkbox" name="ziying" value="玉器">玉器</label>
+                                <label><input type="checkbox" name="ziying" value="古钱币">古钱币</label>
+                                <label><input type="checkbox" name="ziying" value="青铜">青铜</label>
+                                <label><input type="checkbox" name="ziying" value="书画">书画</label>
+                                <label><input type="checkbox" name="ziying" value="邮票">邮票</label>
+                                <label><input type="checkbox" name="ziying" value="工艺品">工艺品</label>
+                            </div>
+                        </div>
+
+                        <div class="row row4">
+                            <div class="tit">开店须知</div>
+                            <div class="con">注意事项：这是文字这是文字这是文字这是文字这是文字这是文字这是文字这是文字这是文字这是文字这是文字这是文字这是文字这是文字这是文字这是文字这是文字这是文字这是文字这是文字这是文字这是文字这是文字这是文字这是文字这是文字这是文字这是文字这是文字这是文字这是文字这是文字这是文字这是文字这是文字这是文字这是文字这是文字这是文字这是文字这是文字这是文字这是文字这是文字这是文字</div>
+                        </div>
+
+                        <div class="row row5">
+                            <div class="tit"><input type="radio" name="ok" value="1"></div>
+                            <div class="con">我同意</div>
+                        </div>
+
+                        <div class="row row6">
+                            <button value="提交" id="save" class="baocun">提交</button>
+                        </div>
+
+
+
+
+
+
+
+
+                    <form enctype="multipart/form-data" id="form1" style="display: none">
+                        <input type="file" accept="image/*" name="imgfile" id="imgfile1" onchange="uploadimg(1)"/>
+                    </form>
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+   	<div id="page1"></div>
+		<script>
+        
+          $("#page1").load("index.html");
+           </script>
+</body>
+
+</html>

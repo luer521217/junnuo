@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=0">
+
+		<title>我的购物车</title>
+
+		<link href="../AmazeUI-2.4.2/assets/css/admin.css" rel="stylesheet" type="text/css">
+		<link href="../AmazeUI-2.4.2/assets/css/amazeui.css" rel="stylesheet" type="text/css">
+
+		<link href="../css/personal.css" rel="stylesheet" type="text/css">
+		<link href="../css/orstyle.css" rel="stylesheet" type="text/css">
+
+		<link rel="stylesheet" href="../css/new.css">
+
+		<script src="../AmazeUI-2.4.2/assets/js/jquery.min.js"></script>
+		<script src="../AmazeUI-2.4.2/assets/js/amazeui.js"></script>
+
+		<link rel="stylesheet" href="css/bsgrid.all.min.css"/>
+		<script type="text/javascript" src="../js/jquery-1.7.2.min.js"></script>
+		<script type="text/javascript" src="js/grid.zh-CN.min.js"></script>
+
+
+		<script type="text/javascript" src="js/common.js"></script>
+		<script type="text/javascript" src="js/grid.js"></script>
+		<script type="text/javascript" src="js/grid.extend.js"></script>
+		<script type="text/javascript" src="js/grid.paging.js"></script>
+		<script type="text/javascript" src="js/util.js"></script>
+
+		<script src="../js/index.js"></script>
+		<script src="../js/myCar.js"></script>
+	</head>
+
+<body>
+		<div class="center">
+			<div class="col-main">
+				<div class="main-wrap My-collection wdcp">
+
+					<div class="user-order">
+
+						<!--标题 -->
+						<div class="am-cf am-padding">
+							<div class="am-fl am-cf">
+								<strong class="am-text-danger am-text-lg" id="center_title">我的购物车</strong>
+
+							</div>
+
+						</div>
+						<hr/>
+						<!--主体-->
+						<table id="searchTable">
+							<tr>
+								<th w_render="renderImg" width="10%;">藏品图片</th>
+								<th w_render="info" width="10%;">藏品信息</th>
+								<th w_index="price" w_align="center" width="15%;">单价</th>
+								<th w_render="put_time" w_align="center" width="15%;">加入时间</th>
+								<th w_render="operate" width="25%;">操作</th>
+							</tr>
+						</table>
+
+
+
+
+
+				</div>
+			  </div>
+			</div>
+			<div id="page1"></div>
+			<script>
+        		$("#page1").load("index.html");
+		   </script>
+</body>
+
+</html>

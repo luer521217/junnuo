@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=0">
+
+    <title>出售订单</title>
+
+    <link href="../AmazeUI-2.4.2/assets/css/admin.css" rel="stylesheet" type="text/css">
+		<link href="../AmazeUI-2.4.2/assets/css/amazeui.css"  rel="stylesheet" type="text/css">
+
+		<link href="../css/personal.css" rel="stylesheet" type="text/css">
+		<link href="../css/orstyle.css"  rel="stylesheet" type="text/css">
+
+		<link rel="stylesheet" href="../css/new.css">
+
+		<script src="../AmazeUI-2.4.2/assets/js/jquery.min.js"></script>
+		<script src="../AmazeUI-2.4.2/assets/js/amazeui.js"></script>
+
+		<link rel="stylesheet" href="css/bsgrid.all.min.css"/>
+		<script type="text/javascript" src="../js/jquery-1.7.2.min.js"></script>
+		<script type="text/javascript" src="js/grid.zh-CN.min.js"></script>
+
+
+		<script type="text/javascript" src="js/common.js"></script>
+		<script type="text/javascript" src="js/grid.js"></script>
+		<script type="text/javascript" src="js/grid.extend.js"></script>
+		<script type="text/javascript" src="js/grid.paging.js"></script>
+		<script type="text/javascript" src="js/util.js"></script>
+        
+        <script src="../js/index.js"></script>
+        <script src="../js/order.js"></script>
+        
+
+</head>
+<body>
+<div class="center">
+    <div class="col-main">
+        <div class="main-wrap add-collection">
+
+            <div class="user-order">
+
+                <!--标题 -->
+                <div class="am-cf am-padding">
+                    <div class="am-fl am-cf">
+                        <strong class="am-text-danger am-text-lg"><a href="#" class="main-title">出售订单</a></strong>
+
+
+                    </div>
+                    <!--<div class="toback"><a href="#">返回</a></div>-->
+                </div>
+                <hr/>
+                <!--主体-->
+
+                <div class="main">
+                    <div data-am-widget="tabs" class="am-tabs am-tabs-d2">
+                        <ul class="am-tabs-nav am-cf ul-csdd">
+                            <li class="am-active"><a href="[data-tab-panel-0]">店铺订单</a></li>
+                            <li class=""><a href="[data-tab-panel-1]">拍卖订单</a></li>
+                        </ul>
+                        <div class="am-tabs-bd">
+                            <div data-tab-panel-0 class="am-tab-panel am-active">
+                              <table id="searchTable" class="csdd">
+                                <tr>
+                                  <th w_render="renderImg" width="5%;">图片</th>
+                                  <th  w_render="info"   width="30%">商品</th>
+                                  <th  w_index="totalPrice" width="10%">单价</th>
+                                  <th  w_render="oraderStatus" width="15%">交易状态</th>
+                                  <th w_render="operate" width="50%;">操作</th>
+                                </tr>
+                              </table>
+                            </div>
+                            <div data-tab-panel-1 class="am-tab-panel ">
+                              <table id="searchTable1" class="csdd">
+                                <tr>
+                                  <th w_render="renderImg" width="5%;">图片</th>
+                                  <th  w_render="info"   width="30%">商品</th>
+                                  <th  w_index="totalPrice" width="10%">单价</th>
+                                  <th  w_render="oraderStatus" width="15%">交易状态</th>
+                                  <th w_render="operate1" width="50%;">操作</th>
+                                </tr>
+                              </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>              
+            </div>
+        </div>
+    </div>
+    <div id="page1"></div>
+    <script>
+
+        $("#page1").load("index.html");
+    </script>
+</body>
+
+</html>

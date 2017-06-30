@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=0">
+
+		<title>鉴定详情</title>
+
+		<link href="../AmazeUI-2.4.2/assets/css/admin.css"  rel="stylesheet" type="text/css">
+		<link href="../AmazeUI-2.4.2/assets/css/amazeui.css"  rel="stylesheet" type="text/css">
+
+		<link href="../css/personal.css"  rel="stylesheet" type="text/css">
+		<link href="../css/orstyle.css"  rel="stylesheet" type="text/css">
+
+		<link rel="stylesheet" href="../css/new.css">
+
+		<script src="../AmazeUI-2.4.2/assets/js/jquery.min.js"></script>
+		<script src="../AmazeUI-2.4.2/assets/js/amazeui.js"></script>
+         
+		<script src="../js/IdentifyDetails.js"></script>
+	</head>
+<body>
+		<div class="center">
+			<div class="col-main">
+				<div class="main-wrap add-collection identifyDetail">
+
+					<div class="user-order">
+
+						<!--标题 -->
+						<div class="am-cf am-padding">
+							<div class="am-fl am-cf">
+								<strong class="am-text-danger am-text-lg" id="center_title">鉴定详情</strong>
+
+							</div>
+							<div class="toback"><a href="myCollection.html">返回</a></div>
+						</div>
+						<hr/>
+						<!--主体-->
+
+						<div class="tab tab-head">
+									<div class="order-top">
+										<div class="th th-bg">
+											藏品名称
+										</div>
+										<div class="th th-material">
+											<input type="text" id="name" readonly value="">
+										</div>
+										<div class="th th-bg">
+											藏品材质
+										</div>
+										<div class="th th-weight">
+											<input type="text" id="texture" readonly value="">
+										</div>
+
+									</div>
+
+
+								</div>
+						<div class="tab tab-head">
+							<div class="order-top">
+								<div class="th th-bg">
+									藏品年代
+								</div>
+								<div class="th th-material">
+									<input type="text" id="epoch" readonly value="">
+								</div>
+								<div class="th th-bg">
+									藏品估价
+								</div>
+								<div class="th th-weight">
+									<input type="text" id="evaluate" readonly value="">
+								</div>
+
+							</div>
+
+
+						</div>
+						
+						<div class="tab tab-head">
+									<div class="order-top">
+										<div class="th th-bg">
+											鉴定费
+										</div>
+										<div class="th th-material">
+											<input type="text" id="cost" readonly value="">
+										</div>
+										<div class="th th-bg">
+											鉴定状态
+										</div>
+										<div class="th th-weight">
+											<input type="text" id="status" readonly value="">
+										</div>
+
+									</div>
+
+
+								</div>
+
+						<div class="tab tab-head">
+							<div class="order-top">
+								<div class="th th-bg">
+									鉴定提交时间
+								</div>
+								<div class="th th-material">
+									<input type="text" id="submitTime" readonly value="">
+								</div>
+								<div class="th th-bg">
+									操作时间
+								</div>
+								<div class="th th-weight">
+									<input type="text" id="date" readonly value="">
+								</div>
+
+							</div>
+
+
+						</div>
+
+						<div class="tab tab-head">
+							<div class="order-top">
+								<div class="th th-bg">
+									操作开始时间
+								</div>
+								<div class="th th-material">
+									<input type="text" id="startDate" readonly value="">
+								</div>
+								<div class="th th-bg">
+									操作结束时间
+								</div>
+								<div class="th th-weight">
+									<input type="text" id="endDate" readonly value="">
+								</div>
+
+							</div>
+
+
+						</div>
+
+						<div class="tab tab-head">
+							<div class="order-top">
+								<div class="th th-bg">
+									是否公开
+								</div>
+								<div class="th th-material">
+									<input type="text" id="public" readonly value="">
+								</div>
+								<div class="th th-bg">
+									是否缴费
+								</div>
+								<div class="th th-weight" id="PaymentRot">
+									<input type="text" id="Payment" readonly value="">
+									<div id="pay"><a href="javascript:void(0)">立即缴费</a></div>
+
+								</div>
+
+							</div>
+
+
+						</div>
+
+						<div id="erweima"><img src="../images/pay.jpg" alt=""></div>
+						<script>
+							$("#pay").on("click",function () {
+								$("#erweima").css("display","block")
+                            })
+						</script>
+
+						<div class="tab tab-head">
+							<div class="order-top">
+								<div class="th th-bg">
+									鉴定结果
+								</div>
+								<div class="th th-material">
+									<input type="text" readonly value="" id="isture">
+								</div>
+								<div class="th th-bg">
+									鉴定等级
+								</div>
+								<div class="th th-weight">
+									<input type="text" readonly value="" id="artworkRank">
+								</div>
+
+							</div>
+
+
+						</div>
+
+
+
+
+
+
+
+						</div>
+
+
+								</div>
+
+
+					</div>
+
+			<div id="page1"></div>
+		<script>
+        
+          $("#page1").load("index.html");
+		   </script>
+
+</body>
+
+</html>

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=0">
+
+		<title>藏品详情</title>
+
+		<link href="../AmazeUI-2.4.2/assets/css/admin.css" rel="stylesheet" type="text/css">
+		<link href="../AmazeUI-2.4.2/assets/css/amazeui.css" rel="stylesheet" type="text/css">
+
+		<link href="../css/personal.css"  rel="stylesheet" type="text/css">
+		<link href="../css/orstyle.css"  rel="stylesheet" type="text/css">
+
+		<link rel="stylesheet" href="../css/new.css">
+
+		<script src="../AmazeUI-2.4.2/assets/js/jquery.min.js"></script>
+		<script src="../AmazeUI-2.4.2/assets/js/amazeui.js"></script>
+		
+		<script src="../js/detail.js"></script>
+	</head>
+<body>
+		<div class="center">
+			<div class="col-main">
+				<div class="main-wrap add-collection">
+
+					<div class="user-order">
+
+						<!--标题 -->
+						<div class="am-cf am-padding">
+							<div class="am-fl am-cf">
+								<strong class="am-text-danger am-text-lg" id="center_title">藏品详情</strong>
+
+							</div>
+							<div class="toback"><a href="CollectionManagement.html">返回</a></div>
+						</div>
+						<hr/>
+						<!--主体-->
+
+						<div class="tab tab-head">
+									<div class="order-top">
+										<div class="th th-bg">
+											藏品名称
+										</div>
+										<div class="th th-material">
+											<input type="text" id="name" readonly value="">
+										</div>
+										<div class="th th-bg">
+											藏品材质
+										</div>
+										<div class="th th-weight">
+											<input type="text" id="texture" readonly value="">
+										</div>
+
+									</div>
+
+
+								</div>
+						<div class="tab tab-head">
+							<div class="order-top">
+								<div class="th th-bg">
+									藏品年代
+								</div>
+								<div class="th th-material">
+									<input type="text" id="epoch" readonly value="">
+								</div>
+								<div class="th th-bg">
+									藏品作者
+								</div>
+								<div class="th th-weight">
+									<input type="text" id="author" readonly value="">
+								</div>
+
+							</div>
+
+
+						</div>
+						<div class="tab tab-head">
+							<div class="order-top">
+								<div class="th th-bg">
+									藏品尺寸
+								</div>
+								<div class="th th-material">
+									<input type="text" id="size" readonly value="">
+								</div>
+								<div class="th th-bg">
+									藏品重量
+								</div>
+								<div class="th th-weight">
+									<input type="text" id="weight" readonly value="">
+								</div>
+
+							</div>
+
+
+						</div>
+						<div class="tab tab-head">
+							<div class="order-top">
+								<div class="th th-bg">
+									藏品数量
+								</div>
+								<div class="th th-material">
+									<input type="text" id="amount" readonly value="">
+								</div>
+								<div class="th th-bg">
+									发布日期
+								</div>
+								<div class="th th-weight">
+									<input type="text" id="date" readonly value="">
+								</div>
+
+							</div>
+
+
+						</div>
+
+						<div class="tab tab-head">
+							<div class="order-top">
+								<div class="th th-bg">
+									操作时间
+								</div>
+								<div class="th th-weight">
+									<input type="text" id="date3" readonly value="">
+								</div>
+								<div class="th th-bg">
+									一级类别
+								</div>
+								<div class="th th-material">
+									<input type="text" id="sortName" readonly value="">
+								</div>
+							</div>
+
+
+						</div>
+
+
+
+
+						<div class="tab tab-head">
+							<div class="order-top">
+								<div class="th th-bg">
+									二级类别
+								</div>
+								<div class="th th-material">
+									<input type="text" id="detailName" readonly value="">
+								</div>
+								<div class="th th-bg">
+									藏品状态
+								</div>
+								<div class="th th-material">
+									<input type="text" id="status" readonly value="">
+								</div>
+
+							</div>
+
+
+						</div>
+
+
+						<div class="tab tab-head">
+							
+
+
+						</div>
+
+						<div class="tab tab-head">
+							<div class="order-top info">
+                                    简介:
+								</div>
+
+							</div>
+
+						<div class="tab tab-head">
+							<div class="order-top description">
+								<textarea name="shop-info" id="intro" cols="142" rows="10" readonly></textarea>
+							</div>
+
+						</div>
+
+
+						</div>
+
+
+								</div>
+
+
+					</div>
+
+			<div id="page1"></div>
+		<script>
+        
+          $("#page1").load("index.html");
+    </script>
+	</body>
+
+</html>

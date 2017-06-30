@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=0">
+
+		<title>送鉴定</title>
+
+		<link href="../AmazeUI-2.4.2/assets/css/admin.css" rel="stylesheet" type="text/css">
+		<link href="../AmazeUI-2.4.2/assets/css/amazeui.css" rel="stylesheet" type="text/css">
+
+		<link href="../css/personal.css"  rel="stylesheet" type="text/css">
+		<link href="../css/orstyle.css" rel="stylesheet" type="text/css">
+
+		<link rel="stylesheet" href="../css/new.css">
+
+		<script src="../AmazeUI-2.4.2/assets/js/jquery.min.js"></script>
+		<script src="../AmazeUI-2.4.2/assets/js/amazeui.js"></script>
+
+		<script src="../js/toIdentification.js"></script>
+
+
+	</head>
+<body>
+		<div class="center">
+			<div class="col-main">
+				<div class="main-wrap Identification">
+
+					<div class="user-order">
+
+						<!--标题 -->
+						<div class="am-cf am-padding">
+							<div class="am-fl am-cf"><strong class="am-text-danger main-title am-text-lg" id="center_title" >送鉴定</strong></div>
+							<div class="go-back"><a href="javascript:history.go(-1)">返回</a></div>
+						</div>
+						<hr/>
+						<!--主体-->
+
+						<form action="#">
+							<div class="tab tab-head" id="head">
+								<div class="order-top order-top-1 sj-list">
+									<div class="th th-check">
+                                         选择
+									</div>
+									<div class="th th-item">
+										图片
+									</div>
+									<div class="th th-material">
+										姓名
+									</div>
+									<div class="th th-phone">
+										手机
+									</div>
+
+									<div class="th th-size">
+										职位
+									</div>
+									<div class="th th-change">
+										特长
+									</div>
+								</div>
+
+
+							</div>
+							<!--<div class="tab1">
+								<div class="order-top  sj-list">
+									<div class="th th-check">
+										<input type="checkbox" name="Appraiser">
+									</div>
+									<div class="th th-item">
+										<img src="../images/people.jpg"  alt="">
+									</div>
+									<div class="th th-material">
+										铜
+									</div>
+									<div class="th th-phone">
+										李三
+									</div>
+
+									<div class="th th-size">
+										鉴定师
+									</div>
+									<div class="th th-change">
+										古代书画
+									</div>
+								</div>
+
+
+							</div>-->
+
+							<div class="public">
+
+								<span><input type="radio" name="public" value="1">公开</span>
+								<span><input type="radio" name="public" value="0">隐藏</span>
+							</div>
+
+
+							<div class="subm-jd" id="save">提交</div>
+						</form>
+
+
+					</div>
+					<hr>
+					<p>注释：送鉴藏品可以不选择相关专家；选可见：藏品鉴定栏做展示；选隐藏：前台页面不展示；</p>
+
+					</div>
+				</div>
+
+			<script>
+				/*var len=$(input[name='Appraiser']).length;*/
+
+			</script>
+
+			<div id="page1"></div>
+		<script>
+
+          $("#page1").load("index.html");
+		   </script>
+</body>
+
+</html>

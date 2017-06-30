@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=0">
+
+    <title>编辑</title>
+
+    <link href="../AmazeUI-2.4.2/assets/css/admin.css" rel="stylesheet" type="text/css">
+    <link href="../AmazeUI-2.4.2/assets/css/amazeui.css" rel="stylesheet" type="text/css">
+
+    <link href="../css/personal.css"  rel="stylesheet" type="text/css">
+    <link href="../css/orstyle.css" rel="stylesheet" type="text/css">
+
+    <link rel="stylesheet" href="../css/new.css">
+
+    <script src="../AmazeUI-2.4.2/assets/js/jquery.min.js"></script>
+    <script src="../AmazeUI-2.4.2/assets/js/amazeui.js"></script>
+
+    <script src="../js/updates.js"></script>
+</head>
+<body>
+<div class="center">
+    <div class="col-main">
+        <div class="main-wrap My-collection my-Identification">
+
+            <div class="user-order">
+
+                <!--标题 -->
+                <div class="am-cf am-padding">
+                    <div class="am-fl am-cf">
+                        <strong class="am-text-danger am-text-lg"><a href="#">编辑</a></strong>
+
+
+                    </div>
+
+
+                </div>
+                <hr/>
+                <!--主体-->
+
+                <div class="main">
+                    <form action="#">
+                        <table class="shopInfo">
+                            <tr>
+                                <td>藏品名称</td>
+                                <td><input type="text" id="name" readonly/></td>
+                                <td style="display:none;"><input type="text" id="id" readonly/></td>
+                                <td>价格</td>
+                                <td><input type="text" id="price"></td>
+                            </tr>
+                            <tr>
+                                <td class="deepbgc">材质</td>
+                                <td><input type="text" id="texture" readonly/></td>
+                                <td class="deepbgc">年代</td>
+                                <td><input type="text" id="epoch" readonly/></td>
+                            </tr>
+
+                        </table>
+                        <div class="btn-ctl">
+                            <input type="submit" value="提交" onclick="y_submit()">
+                            <a href="shopcollection.html">返回</a>
+                        </div>
+                    </form>
+
+                </div>
+
+
+            </div>
+
+
+        </div>
+    </div>
+   <div id="page1"></div>
+		   <script>
+            $("#page1").load("index.html");
+		   </script>
+</div>
+
+</body>
+
+</html>

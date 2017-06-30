@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=0">
+
+    <title>店铺详情</title>
+
+    <link href="../AmazeUI-2.4.2/assets/css/admin.css" rel="stylesheet" type="text/css">
+    <link href="../AmazeUI-2.4.2/assets/css/amazeui.css" rel="stylesheet" type="text/css">
+
+    <link href="../css/personal.css" rel="stylesheet" type="text/css">
+    <link href="../css/orstyle.css" rel="stylesheet" type="text/css">
+
+    <link rel="stylesheet" href="../css/new.css">
+
+    <script src="../AmazeUI-2.4.2/assets/js/jquery.min.js"></script>
+    <script src="../AmazeUI-2.4.2/assets/js/amazeui.js"></script>
+
+    <script src="../js/shopment.js"></script>
+</head>
+<body>
+<div class="center">
+    <div class="col-main">
+        <div class="main-wrap My-collection my-Identification">
+
+            <div class="user-order">
+
+                <!--标题 -->
+                <div class="am-cf am-padding">
+                    <div class="am-fl am-cf">
+                        <strong class="am-text-danger am-text-lg"><a href="#">店铺详情</a></strong>
+
+
+                    </div>
+                    <div class="toback"><a href="shopment.html">返回</a></div>
+
+                </div>
+                <hr/>
+                <!--主体-->
+
+                <div class="main">
+                    <table class="shopInfo">
+                         <tr>
+                            <td>店铺名称</td>
+                            <td><input type="text" id ="storename" readonly/></td>
+                            <td rowspan="2" class="deepbgc">店铺LOGO</td>
+                            <td rowspan="2"><div id="grxxtu" class="grxxtu"><img src=""/>
+                              </div></td>
+                            <!--<td rowspan="2" ><img src="../images/qtq.jpg" alt="" id="storePortrait" readonly></td>-->
+                        </tr>
+                         <tr>
+                            <td class="deepbgc">店铺级别</td>
+                            <td><input type="text" id ="rankname" readonly/></td>
+
+                        </tr>
+                        <tr>
+                            <td>点击量</td>
+                            <td><input type="text" id ="hits" readonly/></td>
+                            <td>店铺年费</td>
+                            <td><input type="text" id ="annuity_cost" readonly/></td>
+                        </tr>
+                        <tr>
+                            <td class="deepbgc">店铺主营</td>
+                            <td><input type="text" id ="mianProducts" readonly/></td>
+                            <td class="deepbgc">年费交纳时间</td>
+                             <td><input type="text" id ="payTime" readonly/></td>
+                        </tr>
+                        <tr>
+                            <td>年费到期时间</td>
+                            <td><input type="text" id ="deadline" readonly/></td>
+                            <td>冻结状态</td>
+                            <td><input type="text" id ="del_status" readonly/></td>
+                        </tr>
+                         <tr>
+                            <td class="deepbgc">升级状态</td>
+                            <td><input type="text" id ="isupgrade" readonly/></td>
+                            <td class="deepbgc">缴费状态</td>
+                            <td><input type="text" id ="isPayUpgrade" readonly/></td>
+                        </tr>
+                        <tr>
+                            <td>店铺状态</td>
+                            <td><input type="text" id ="auditStatus" readonly/></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </table>
+                </div>
+
+
+            </div>
+
+
+        </div>
+    </div>
+    <div id="page1"></div>
+		<script>
+        
+          $("#page1").load("index.html");
+           </script>
+
+</body>
+
+</html>

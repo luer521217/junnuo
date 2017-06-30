@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=0">
+
+    <title>店铺升级</title>
+
+    <link href="../AmazeUI-2.4.2/assets/css/admin.css" rel="stylesheet" type="text/css">
+    <link href="../AmazeUI-2.4.2/assets/css/amazeui.css" rel="stylesheet" type="text/css">
+
+    <link href="../css/personal.css" rel="stylesheet" type="text/css">
+    <link href="../css/orstyle.css"  rel="stylesheet" type="text/css">
+
+    <link rel="stylesheet" href="../css/new.css">
+
+    <script src="../AmazeUI-2.4.2/assets/js/jquery.min.js"></script>
+    <script src="../AmazeUI-2.4.2/assets/js/amazeui.js"></script>
+    <script src="../js/shopment.js"></script>
+</head>
+<body>
+<div class="center">
+    <div class="col-main">
+        <div class="main-wrap My-collection my-Identification">
+
+            <div class="user-order">
+
+                <!--标题 -->
+                <div class="am-cf am-padding">
+                    <div class="am-fl am-cf">
+                        <strong class="am-text-danger am-text-lg"><a href="#">店铺升级</a></strong>
+
+
+                    </div>
+                    <div class="toback"><a href="shopment.html">返回</a></div>
+
+                </div>
+                <hr/>
+                <!--主体-->
+
+                <div class="main">
+                    <table class="shopInfo lv-add">
+                        <tbody>
+                        <tr>
+                            <td>店铺名称</td>
+                            <td><input type="text" id ="storename" readonly/></td>
+                        </tr>
+                        <tr>
+                            <td class="deepbgc">店铺级别</td>
+                            <td><input type="text" id ="rankname" readonly/></td>
+                        </tr>
+                        <tr>
+                            <td>升级状态</td>
+                            <td><input type="text" id ="isupgrade" readonly/></td>
+                        </tr>
+                        <tr>
+                            <td class="deepbgc">缴费状态</td>
+                            <td><input type="text" id ="isPayUpgrade" readonly/></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                    <div class="lv">
+                        <p><a href="javascript:void(0)" id="upgrade">申请升级</a></p>
+                        <img src="../images/pay.jpg" alt="">
+                    </div>
+                    <p>注释：1.目前店铺升级只支持逐级升级，例如：铜牌店铺升级只能上升到银牌店铺；</p>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2.当店铺升为金牌店铺之前请确认店铺中所以藏品已鉴定通过；</p>
+                    <p>升级费用明细说明：</p>
+                    <hr>
+                    <div class="lv-info">
+                        <table>
+                            <thead>
+                            <tr>
+                                <th>店铺等级名称</th>
+                                <th>升级费用</th>
+                            </tr>
+
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>藏家旗舰店</td>
+                                <td>300</td>
+                            </tr>
+
+                            <tr>
+                                <td>金牌店铺</td>
+                                <td>200</td>
+                            </tr>
+
+                            <tr>
+                                <td>银牌店铺</td>
+                                <td>100</td>
+                            </tr>
+
+                            <tr>
+                                <td>铜牌店铺</td>
+                                <td>免费</td>
+                            </tr>
+
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+
+            </div>
+
+
+        </div>
+    </div>
+    <div id="page1">
+    </div>
+	<script>
+        $("#page1").load("index.html");
+	</script>
+</body>
+
+</html>

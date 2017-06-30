@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=0">
+
+    <title>编辑店铺</title>
+
+    <link href="../AmazeUI-2.4.2/assets/css/admin.css" rel="stylesheet" type="text/css">
+    <link href="../AmazeUI-2.4.2/assets/css/amazeui.css" rel="stylesheet" type="text/css">
+
+    <link href="../css/personal.css" rel="stylesheet" type="text/css">
+    <link href="../css/orstyle.css"  rel="stylesheet" type="text/css">
+
+    <link rel="stylesheet" href="../css/new.css">
+
+    <script src="../AmazeUI-2.4.2/assets/js/jquery.min.js"></script>
+    <script src="../AmazeUI-2.4.2/assets/js/amazeui.js"></script>
+    <script src="/artshop/portal/files/jquery.min.js" type="text/javascript"></script>
+    <script src="/artshop/plugins/jquery.form.min.js" type="text/javascript"></script>
+
+    <script src="../js/fileup.js"></script>
+    <script src="../js/shopment.js"></script>
+     <script src ="../js/shopment_edit.js"></script>
+</head>
+<body>
+<div class="center">
+    <div class="col-main">
+        <div class="main-wrap My-collection my-Identification">
+
+            <div class="user-order">
+
+                <!--标题 -->
+                <div class="am-cf am-padding">
+                    <div class="am-fl am-cf">
+                        <strong class="am-text-danger am-text-lg"><a href="#">编辑店铺</a></strong>
+
+
+                    </div>
+                    <div class="toback"><a href="shopment.html">返回</a></div>
+
+                </div>
+                <hr/>
+                <!--主体-->
+
+                <div class="main">
+                    <table class="shopInfo">
+                        <tr>
+                            <td rowspan="1">店铺名称</td>
+                            <td><input type="text" id ="storename"/></td>
+                            <td rowspan="2" class="deepbgc">店铺LOGO</td>
+                            <td rowspan="2" ><div  id="grxxtu" class="grxxtu">
+                                  <input type="hidden" id="photos" name="img_id">
+                                <img id="img_show1" class="shop-logo" src="images/photo_icon.png" width="150" height="150" onclick="$('#imgfile1').click();">
+                                </div>
+                                
+                            </td>
+                          
+                            <!--<img id="img_show1" src="images/photo_icon.png" width="150" height="150" onclick="$('#imgfile1').click();" />-->
+                            <!-- 图片上传表单 -->
+                         
+                        </tr>
+                        <tr>
+                            <td class="deepbgc">店铺级别</td>
+                            <td><input type="text" readonly="readonly" id ="rankname"/></td>
+
+                        </tr>
+                        <tr>
+                            
+                            <td>点击量</td>
+                            <td><input type="text" readonly="readonly" id ="hits"/></td>
+                            <td>店铺年费</td>
+                            <td><input type="text"  readonly="readonly" id ="annuity_cost"/></td>
+                        </tr>
+                        <tr>
+                            <td class="deepbgc">店铺主营</td>
+                            <td colspan="3" class="zhuying">
+                               <input type="checkbox" value="陶瓷" name="zhuying">陶瓷
+                               <input type="checkbox" value="玉器" name="zhuying">玉器
+                                <input type="checkbox" value="古钱币" name="zhuying">古钱币
+                                <input type="checkbox" value="青铜" name="zhuying">青铜
+                                <input type="checkbox" value="书画" name="zhuying">书画
+                                <input type="checkbox" value="邮票" name="zhuying">邮票
+                                <input type="checkbox" value="艺术品" name="zhuying">艺术品
+                            </td>
+
+                        </tr>
+                        <tr>
+                            <td>年费到期时间</td>
+                            <td><input type="text" readonly="readonly" id ="deadline"/></td>
+                            <td>冻结状态</td>
+                            <td><input type="text" readonly="readonly" id ="del_status"/></td>
+                        </tr>
+                        <tr>
+                            <td class="deepbgc">升级状态</td>
+                            <td><input type="text" readonly="readonly" id ="isPayUpgrade"/></td>
+                            <td class="deepbgc">缴费状态</td>
+                            <td><input type="text" readonly="readonly" id ="isPay_annuity"/></td>
+                        </tr>
+                        <tr>
+                            <td>店铺状态</td>
+                            <td><input type="text" readonly="readonly" id ="auditStatus"/></td>
+                            <td>年费缴纳时间</td>
+                            <td><input type="text" readonly="readonly" id ="payTime"/></td>
+                        </tr>
+                    </table>
+                </div>
+
+
+            </div>
+
+<div class="info-btn baocun-con">
+									<div class="am-btn am-btn-danger baocun" id="save">保存修改</div>
+
+
+                                       <form enctype="multipart/form-data" id="form1" style="display: none">
+                                <input type="file" accept="image/*" name="imgfile" id="imgfile1" onchange="uploadimg(1)"/>
+                            </form>
+
+								</div>
+        </div>
+        
+    </div>
+    <div id="page1"></div>
+		<script>
+        
+          $("#page1").load("index.html");
+           </script>
+
+</body>
+
+</html>

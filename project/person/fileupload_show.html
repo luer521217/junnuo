@@ -1,0 +1,74 @@
+<html >
+<head>
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<title>文件上传演示</title>
+<script src="/artshop/portal/files/jquery.min.js" type="text/javascript"></script>
+<script src="/artshop/plugins/jquery.form.min.js" type="text/javascript"></script>
+<script src="/artshop/plugins/json2.js" type="text/javascript"></script>
+<script type="text/javascript">
+ var all_imgs = ['','','',''];//所有的图片id，将来用来作为提交保存的图片id数据
+ var alertImg = "图片必须是jpg格式";
+
+
+//上传图片
+function uploadimg(id_flag){
+	$("#form"+id_flag).ajaxSubmit({
+                success: function (data) {
+                	if(data[0] == "error" || data[0].length < 14){
+                		alert(alertImg);
+                	}else{
+                    	all_imgs[id_flag-1] = data[0];
+                    	show_uploadImg(data[0],$("#img_show"+id_flag));
+                	}
+                },
+                error: function (error) { alert(alertImg); },
+                url: "/artshop/image/upload", /*上传文件的servlet，设置post提交到的页面*/
+                type: "post", /*设置表单以post方法提交*/
+                dataType: "json" /*设置返回值类型为文本*/
+            });
+}
+function show_uploadImg(img_id,dom){
+	$.post(
+     	//根据图片id获取其裁剪尺寸后图片的url地址
+      	'/artshop/imageShow/getImageUrlBySize',
+      	//参数名imgId,size
+      	{imgId:img_id,size:150},
+      	function(data){
+      	//得到url拼接html
+      		if(data){
+      			dom.attr("src",data);
+      	}
+     	});
+}
+   //检查图片是否都上传了
+  function check_img(){
+   	for(var i  =0;i<all_imgs.length;i++){
+   		if(!all_imgs[i]){
+   			return false;
+   		}
+   	}
+   	return true;
+   }
+</script>
+</head>
+<body>
+<input type="hidden" id="photos" name="img_id" >
+<img id="img_show1" src="images/photo_icon.png" width="150" height="150" onclick="$('#imgfile1').click();" />
+<img id="img_show2" src="images/photo_icon.png" width="150" height="150" onclick="$('#imgfile2').click();" />
+<img id="img_show3" src="images/photo_icon.png" width="150" height="150" onclick="$('#imgfile3').click();" />
+<img id="img_show4" src="images/photo_icon.png" width="150" height="150" onclick="$('#imgfile4').click();" />
+<!-- 图片上传表单 -->
+<form enctype="multipart/form-data" id="form1" style="display: none">
+    <input type="file" accept="image/*" name="imgfile" id="imgfile1" onchange="uploadimg(1)"/>
+</form>
+<form enctype="multipart/form-data" id="form2" style="display: none">
+    <input type="file" accept="image/*" name="imgfile" id="imgfile2" onchange="uploadimg(2)"/>
+</form>
+<form enctype="multipart/form-data" id="form3" style="display: none">
+    <input type="file" accept="image/*" name="imgfile" id="imgfile3" onchange="uploadimg(3)"/>
+</form>
+<form enctype="multipart/form-data" id="form4" style="display: none">
+    <input type="file" accept="image/*" name="imgfile" id="imgfile4" onchange="uploadimg(4)"/>
+</form>
+</body>
+</html>

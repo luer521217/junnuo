@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=0">
+
+		<title>订单详情</title>
+
+		<link href="../AmazeUI-2.4.2/assets/css/admin.css" rel="stylesheet" type="text/css">
+		<link href="../AmazeUI-2.4.2/assets/css/amazeui.css" rel="stylesheet" type="text/css">
+
+		<link href="../css/personal.css"  rel="stylesheet" type="text/css">
+		<link href="../css/orstyle.css"  rel="stylesheet" type="text/css">
+
+		<link rel="stylesheet" href="../css/new.css">
+
+		<script src="../AmazeUI-2.4.2/assets/js/jquery.min.js"></script>
+		<script src="../AmazeUI-2.4.2/assets/js/amazeui.js"></script>
+		
+		<script src="../js/shopinfo.js"></script>
+	</head>
+<body>
+		<div class="center">
+			<div class="col-main">
+				<div class="main-wrap add-collection">
+
+					<div class="user-order">
+
+						<!--标题 -->
+						<div class="am-cf am-padding">
+							<div class="am-fl am-cf">
+								<strong class="am-text-danger am-text-lg" id="center_title">订单详情</strong>
+
+							</div>
+							<div class="toback"><a href="javascript:history.back(-1)">返回</a></div>
+						</div>
+						<hr/>
+						<!--主体-->
+
+						<div class="tab tab-head">
+									<div class="order-top">
+										<div class="th th-bg">
+											藏品名称
+										</div>
+										<div class="th th-material">
+											<input type="text" id="name" readonly value="">
+										</div>
+										<div class="th th-bg">
+											藏品材质
+										</div>
+										<div class="th th-weight">
+											<input type="text" id="texture" readonly value="">
+										</div>
+
+									</div>
+
+
+								</div>
+						<div class="tab tab-head">
+							<div class="order-top">
+								<div class="th th-bg">
+									藏品年代
+								</div>
+								<div class="th th-material">
+									<input type="text" id="epoch" readonly value="">
+								</div>
+								<div class="th th-bg">
+									藏品价格
+								</div>
+								<div class="th th-weight">
+									<input type="text" id="pic" readonly value="">
+								</div>
+
+							</div>
+
+
+						</div>
+						<div class="tab tab-head">
+							<div class="order-top">
+								<div class="th th-bg">
+									是否付款
+								</div>
+								<div class="th th-material">
+									<input type="text" id="isplay" readonly value="">
+								</div>
+								<div class="th th-bg">
+									藏品类型
+								</div>
+								<div class="th th-weight">
+									<input type="text" id="shop_class" readonly value="">
+								</div>
+
+							</div>
+
+
+						</div>
+						<div class="tab tab-head">
+							<div class="order-top">
+								<div class="th th-bg">
+									收货人
+								</div>
+								<div class="th th-material">
+									<input type="text" id="name1" readonly value="">
+								</div>
+								<div class="th th-bg">
+
+									收货人电话
+								</div>
+								<div class="th th-weight">
+									<input type="text" id="phone" readonly value="">
+								</div>
+
+							</div>
+
+
+						</div>
+
+						<div class="tab tab-head">
+							<div class="order-top">
+								<div class="th th-bg">
+									收货地址
+								</div>
+								<div class="th th-weight address-info">
+									<input type="text" id="address" readonly value="">
+								</div>
+
+							</div>
+
+
+						</div>
+
+
+                        <div class="tab tab-head">
+							<div class="order-top info">
+                                    商品图片:
+								</div>
+
+							</div>
+						<div  id="grxxtu">
+						<input type="hidden" id="photos" name="img_id" >
+						<img id="img_show1" src="images/photo_icon.png" width="150" height="150" onclick="$('#imgfile1').click();" />
+						<img id="img_show2" src="images/photo_icon.png" width="150" height="150" onclick="$('#imgfile2').click();" />
+						<img id="img_show3" src="images/photo_icon.png" width="150" height="150" onclick="$('#imgfile3').click();" />
+						<img id="img_show4" src="images/photo_icon.png" width="150" height="150" onclick="$('#imgfile4').click();" />
+						</div>
+
+
+
+
+
+
+
+
+
+
+						</div>
+
+
+								</div>
+
+
+					</div>
+
+			<div id="page1"></div>
+		<script>
+        
+          $("#page1").load("index.html");
+    </script>
+	</body>
+
+</html>

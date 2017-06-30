@@ -1,0 +1,875 @@
+
+
+/*我的藏品列表*/
+.My-collection .th-item{
+    width: 300px;
+}
+
+.My-collection .th-change{
+    width:300px;
+}
+
+.My-collection .tab1-head{
+    background-color: #c0c0c0;
+
+}
+
+.My-collection .add-shop{
+    float: right;
+    height: 30px;
+    width:120px;
+    background-color: #ff1a1e;
+    text-align: center;
+    line-height:30px;
+    color: #fff;
+    font-weight:700;
+}
+
+.My-collection .add-shop a{
+    display: block;
+    color: #fff;
+}
+.wdcp .th-img img{
+    width: 100px;
+
+}
+
+.wdcp .order-top div:nth-child(1){
+    width: 200px;
+    text-align: center;
+
+}
+.wdcp .order-top >div{
+    height: 150px;
+    line-height:150px;
+
+}
+.wdcp .tab1-head .order-top >div{
+    height: 40px;
+    line-height:40px;
+
+}
+
+/*增加藏品*/
+#img_show1,#img_show2,#img_show3,#img_show4{
+    display:block;
+    float:left;
+    width:25%;
+}
+.add-collection .tab .th{
+    width:25%;
+    height: 40px;
+    line-height:40px;
+    text-align: center;
+}
+
+.add-collection .tab .th-bg{
+    background: rgba(133, 169, 140, 0.49);
+}
+.add-collection .order-top{
+    padding:0 ;
+}
+
+.add-collection input,
+.add-collection select{
+    padding:0 20px;
+    width:100%;
+    height: 100%;
+    border:none;
+    outline:none;
+}
+.add-collection select,
+.add-collection select option{
+    text-align: center;
+}
+
+.add-collection .info{
+    padding-left:20px;
+    height: 50px;
+    line-height:50px;
+    font-size:20px;
+    font-weight:bold;
+    background: rgba(133, 169, 140, 0.49);
+}
+
+.add-collection .description{
+    text-align: center;
+    height: 180px;
+}
+
+.Identification .th-check{
+    width:40px;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+}
+
+.Identification .th-item img{
+    width:100px;
+    height: 100px;
+}
+
+.Identification  .order-top div{
+    line-height:100px;
+    height: 100px;
+}
+
+.Identification  .order-top-1 div{
+    height: 40px;
+    line-height:40px;
+}
+
+/*.Identification .order-top-1 .th-check{
+    width:40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+}*/
+
+.Identification .th-item {
+    width:200px;
+}
+
+.Identification .th-change{
+    width:200px !important ;
+    line-height:50px !important;
+}
+/*.identifyDetail .go-back,
+.Identification .go-back,
+.Identification .subm{
+    float: right;
+    height: 30px;
+    width:120px;
+    background-color: #ff0000;
+    text-align: center;
+    line-height:30px;
+    color: #fff;
+    font-weight:700;
+}*/
+/*.identifyDetail .go-back a,
+.Identification .go-back a{
+    display: block;
+    color: #fff;
+}*/
+.subm{
+    margin:50px;
+    color: #fff;
+    background-color: #345aff !important;
+}
+
+.identifyDetail #PaymentRot{
+    position: relative;
+}
+.identifyDetail #erweima {
+    position: absolute;
+    top: 40%;
+    left: 30%;
+    display: none;
+    z-index: 999;
+}
+
+.identifyDetail #erweima img{
+    width: 200px;
+    height: 200px;
+}
+
+.identifyDetail #Payment,#pay{
+    float: left;
+    width:50%;
+    text-align: center;
+}
+
+.identifyDetail #pay a{
+    color: red;
+}
+
+/*我的拍品*/
+#searchTable,#searchTable1,#searchTable2{
+     width:94%;
+    margin:0 auto;
+ }
+
+#searchTable th,
+#searchTable1 th,
+#searchTable2 th{
+    border:1px solid #fff;
+    height: 30px;
+    font-weight:400;
+    font-size:16px;
+    line-height:30px;
+    background-color: #f2f2f2;
+    text-align: center;
+}
+#searchTable td,
+#searchTable1 td,
+#searchTable2 td{
+    vertical-align: middle;
+    height: 30px;
+    font-weight:400;
+    font-size:16px;
+    line-height:30px;
+    background-color: rgba(255, 255, 255, 0.21);
+    text-align: center;
+}
+
+.toback{
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+    border-radius:5px;
+    background-color: #ff9966;
+    float: right;
+
+}
+.toback a{
+    display: block;
+    color: #fff;
+    font-weight:700;
+
+    font-size:16px;
+    text-align: center;
+}
+.tab-head a{
+    display: inline-block;
+    width: 100px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background-color: #bcbcbc;
+    color: #fff;
+    margin:0 1px 0 0;
+}
+.tab-head a.active{
+    background-color: #ff6633;
+}
+.main-con{
+    width:85%;
+    margin:0 auto;
+}
+.main-con .infom{
+    border:1px solid #ccc;
+}
+.hasmt{
+    margin-top: 50px;
+}
+
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
+
+.shopment{
+    width: 60%;
+    margin:30px auto 0;
+}
+
+
+.shopment  tr{
+    width:100%;
+
+}
+.shopment tr:nth-child(1){
+    height:100px;
+
+}
+.shopment tr:nth-child(1) td{
+    height:100px;
+    line-height:100px;
+
+}
+.shopment tr:nth-child(1) td:nth-child(2){
+    line-height:100px;
+    height: 100px;
+    text-align: center;
+}
+.shopment tr:nth-child(1) td img{
+    height:100px;
+    width:100px;
+    margin-top:20px;
+
+}
+.shopment tr td{
+    height: 45px;
+    line-height:40px;
+    border:1px solid #eee;
+    padding-left:20px;
+}
+.shopment tr td:nth-child(2n-1){
+    width:20%;
+
+}
+.shopment tr td:nth-child(2n){
+    width:40%;
+    text-align: center;
+
+
+}
+.kaidian{
+    display: block;
+    text-align: center;
+    width: 100px;
+    height: 40px;
+    line-height: 40px;
+    background-color: #4e61ff;
+    color: #fff !important;
+    font-weight:700;
+    border-radius:5px;
+    margin:20px auto;
+
+}
+
+.main{
+    width:90%;
+    margin:0 auto;
+    position: relative;
+}
+.main .tab .th:nth-child(2n-1){
+    width:20%;
+}
+.main .tab .th:nth-child(2n){
+    width:30%;
+}
+.main .tab-info,.main .tab-img-info{
+    height: 150px;
+}
+
+.main .tab-info .th,
+.main .tab-img-info .th{
+    height:148px;
+    line-height:148px;
+}
+.main .tab-info .th-info,
+.main .tab-img-info .th-info{
+    width:80% !important;
+    border:1px solid #ddd;
+}
+.main .tab-info textarea{
+    height:148px;
+    width:100%;
+}
+.main .tab-img-info .th-info img{
+    width:100px;
+    height:100px;
+    /*margin:5px 20px;*/
+}
+.public{
+    padding-left:50px;
+    height: 100px;
+    line-height: 100px;
+}
+.public span{
+    margin-right:30px;
+}
+.sj-list .th{
+    width:14%;
+    text-align: center;
+}
+.main .row{
+    margin:10px 0;
+}
+.main .row >div{
+    float: left;
+}
+.main .row > div:nth-child(1){
+    width:20%;
+}
+.main .row > div:nth-child(2){
+    width:80%;
+}
+
+.row1{
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+
+}
+.row1 img{
+    height: 100px;
+    width:100px;
+
+
+}
+.row2,.row3,.row5{
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+}
+.row1 div:nth-child(2),
+.row2 div:nth-child(2),
+.row3 div:nth-child(2),
+.row5 div:nth-child(2){
+    text-align: left;
+}
+
+.row2 div input{
+    height: 50px;
+    width: 50%;
+    border:1px solid #ccc;
+}
+.row4{
+    height: 250px;
+    line-height: 250px;
+    text-align: center;
+
+}
+.row4 div:nth-child(2){
+    border:1px solid #e0e0e0;
+    padding: 5px;
+    text-align: left;
+    text-indent:2em;
+    line-height: 40px;
+    height: 100%;
+}
+.row3 input,
+.row5 input{
+    width:10px;
+    height: 10px;
+}
+.row6{
+    text-align: center;
+}
+.row6 input{
+    width:150px;
+    height: 50px;
+    background-color: #3058ff;
+    line-height:50px;
+    font-size: 18px;
+    font-weight: 700;
+    color: #fff;
+    border-radius:10px;
+}
+.main .shopInfo{
+    width:100%;
+}
+.main .shopInfo tr td{
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    border:1px solid #eee;
+    
+}
+
+.main .shopInfo tr td img{
+    width:80px;
+    height: 80px;
+
+}
+.main .shopInfo tr td input{
+    width:100%;
+    height: 40px;
+    border:none;
+
+}
+.main .shopInfo tr td.zhuying input{
+    width:10px;
+    height: 10px;
+
+
+}
+/*.main .shopInfo tr .teshu{
+    padding-top:20px;
+}*/
+.main .shopInfo tr td:nth-child(2n-1){
+    width:20%;
+    background-color: #f2f2f2;
+}
+.main .shopInfo tr td:nth-child(2n){
+    width:30%;
+}
+.deepbgc{
+    background-color: #bcbcbc !important;
+}
+.btn-ctl {
+    text-align: center;
+}
+.btn-ctl *{
+    display: inline-block;
+    width:100px;
+    height: 50px;
+    background-color: #359bff;
+    color: #fff !important;
+    line-height:50px;
+    border:none;
+    border-radius:10px;
+    margin:10px;
+}
+.main .lv-add{
+    margin-top: 30px;
+    width:60%;
+}
+.main  .lv{
+    position: absolute;
+    top: -20px;
+    right: 40px;
+}
+.main  .lv p a{
+    display: block;
+    width: 100px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: #fff4f3;
+    background-color: #359bff;
+    border-right:10px;
+    margin:0 auto;
+}
+.main  .lv img{
+    width: 150px;
+    height: 150px;
+}
+
+.lv-info{
+    width:600px;
+    margin: 0 auto;
+    border:1px solid #ffb63b;
+}
+
+.lv-info table{
+    width:600px;
+    margin: 0 auto;
+    border:1px solid #ffb63b;
+}
+
+.lv-info table th,
+.lv-info table td
+{
+    text-align: center;
+    height: 30px;
+    width:50%;
+    line-height: 30px;
+    border:1px solid #eee;
+}
+
+.lv-info table th{
+    background-color: rgba(111, 111, 111, 0.48);
+}
+
+/*地址管理*/
+.e-address{
+    width: 90%;
+    margin:0 auto;
+}
+.e-address ul li{
+    height: 200px;
+    text-align: center;
+  
+}
+.e-address ul li .con{
+    border:1px solid #eee;
+    width:90%;
+    height: 100%;
+    padding:30px 5px;
+    position: relative;
+    background:url("../images/peraddbg.png") no-repeat center center;
+    -webkit-background-size:252px 150px;
+    background-size:252px 150px;
+}
+
+/* .e-address ul li .con:before{
+     content: '设为默认';
+    position: absolute;
+    display: none;
+    right: 10px;
+    top: 30px;
+   
+    cursor: pointer;
+    width: 60px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    background-color: #7fc11a;
+}
+ */
+
+.e-address ul li .con .con-ico{
+   
+    position: absolute;
+    display: none;
+     cursor: pointer;
+    right: 10px;
+    top: 24px;
+  
+    width: 60px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    background-color: #7fc11a;
+}
+.e-address ul li:hover .con .con-ico{
+   
+    position: absolute;
+    display: block;
+     cursor: pointer;
+    right: 10px;
+    top: 24px;
+  
+    width: 60px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    background-color: #7fc11a;
+}
+
+
+.e-address ul li.on .con{
+    border:1px solid #eee;
+    width:90%;
+    height: 100%;
+    padding:30px 5px;
+    position: relative;
+    background:url("../images/peraddressbg.png") no-repeat center center;
+    -webkit-background-size:252px 150px;
+    background-size:252px 150px;
+}
+.e-address ul li.on .con:before{
+    content: '默认';
+    position: absolute;
+    right: 10px;
+    top: 24px;
+    display: block;
+    width: 40px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    background-color: #7fc11a;
+
+}
+
+.e-address ul li .receivePhone{
+    padding-left:10px;
+}
+
+
+.e-address ul li .con p{
+    padding:5px 10px;
+    text-align: right;
+}
+.e-address ul li .con p:nth-child(1),
+.e-address ul li .con p:nth-child(2){
+    text-align: left;
+}
+
+
+
+
+
+
+
+.add-address .cell{
+    width: 90%;
+    margin: 10px auto;
+    
+}
+
+.add-address .cell span{
+    width: 150px;
+    display: inline-block;
+    height: 40px;
+    line-height: 40px;
+    text-align: left;
+
+}
+
+.add-address .cell input{
+    width: 60%;
+    display: inline-block;
+    height: 40px;
+    line-height: 40px;
+    text-align: left;
+
+}
+
+.add-address .cell select{
+    width: 90%;
+    display: inline-block;
+    height: 40px;
+    line-height: 40px;
+    margin-right:20px;
+    text-align: left;
+
+}
+
+
+.add-address .cell textarea{
+    width: 60%;
+    display: inline-block;
+    height: 150px;
+    line-height: 40px;
+
+    text-align: left;
+
+}
+
+.add-address .info {
+    padding-left:180px;
+    display: inline-block;
+
+    line-height: 40px;
+
+    text-align: left;
+
+}
+
+
+
+.add-address .btn{
+    text-align: center;
+}
+.add-address .btn input{
+    margin:0 40px;
+    width: 80px;
+    height: 30px;
+    border:none;
+
+    border-radius: 15px;
+    background-color: #ff9543;
+}
+.am-tab-panel  td,
+.am-tab-panel  th{
+    text-align: center;
+}
+.dingdan{
+    height: 50px;
+    line-height: 50px;
+    text-align: left !important;
+}
+
+.am-tab-panel  td a,
+.am-tab-panel  td i.money{
+    display: block;
+}
+
+
+#grxxtu{
+    text-align: left;
+}
+
+.shop-logo{
+    position: relative;
+    padding-top: 0;
+}
+
+.shop-logo span{
+    position: absolute;
+    top: 35px;
+}
+
+.main-title,#center_title{
+    font-size:18px !important;
+    color: #000 !important;
+    padding-left: 20px !important;
+    /*font-weight: 700;*/
+}
+
+/*返回*/
+
+.toback,.My-collection .add-shop,.identifyDetail .go-back,
+.Identification .go-back,
+.Identification .submgo-1,
+.back{
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 5px;
+    text-align: center;
+    background-color: #ff9966;
+    float: right;
+}
+.toback a,.My-collection .add-shop a,.identifyDetail .go-back a,
+.Identification .go-back a,
+.back a{
+    display: block;
+    color: #fff;
+    font-weight: 700;
+    font-size: 16px;
+    text-align: center;
+}
+
+.logo-img{
+    position: relative;
+}
+.logo-img img{
+    position: absolute;
+    top: 0;
+    left: 100px;
+
+}
+
+.baocun{
+    margin:20px auto;
+    background-color: #ff9966;
+    border-radius: 5px;
+    border:none;
+    width: 80px;
+    height: 30px;
+}
+.baocun-con{
+    text-align: center;
+}
+
+.jq22-container{
+    display: inline-block;
+    width:80%;
+}
+
+.jq22-container .container{
+    padding-left:0;
+}
+.jq22-container  .form-group{
+    display: inline-block;
+    width:16%;
+}
+
+.csdd tr  td.lineNoWrap:last-child a{
+    width: 50%;
+    display: inline-block;
+}
+
+
+.ul-csdd li{
+    width:50%;
+    min-width:50%;
+}
+
+.ul-gmdd li{
+    width:33.3%;
+    min-width:33.3%;
+}
+.info-btn{
+    text-align: center;
+}
+.xg-btn{
+    margin:20px auto;
+}
+
+.grxxtu img{
+    position: absolute;
+    width: 80px;
+    height: 80px;
+}
+
+.y_jl{
+    margin-top: 15px;
+}
+
+.subm-jd{
+    width: 100px;
+   margin: 30px auto;
+   background-color: #298bce;
+   font-size: 18px;
+   color:#fff;
+    text-align: center;
+    line-height: 40px;
+    height: 40px;
+}
+
+.shop-logo{
+    width: 100px !important;
+    padding-left: 20px;
+}
+
+.address-info{
+    width: 75% !important;
+}

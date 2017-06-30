@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=0">
+
+		<title>我的店铺</title>
+
+		<link href="../AmazeUI-2.4.2/assets/css/admin.css" rel="stylesheet" type="text/css">
+		<link href="../AmazeUI-2.4.2/assets/css/amazeui.css"  rel="stylesheet" type="text/css">
+
+		<link href="../css/personal.css" rel="stylesheet" type="text/css">
+		<link href="../css/orstyle.css" rel="stylesheet" type="text/css">
+
+		<link rel="stylesheet" href="../css/new.css">
+
+		<script src="../AmazeUI-2.4.2/assets/js/jquery.min.js"></script>
+		<script src="../AmazeUI-2.4.2/assets/js/amazeui.js"></script>
+		
+		<link rel="stylesheet" href="css/bsgrid.all.min.css"/>
+		<script type="text/javascript" src="../js/jquery-1.7.2.min.js"></script>
+		<script type="text/javascript" src="js/grid.zh-CN.min.js"></script>
+		
+		<script type="text/javascript" src="js/common.js"></script>
+		<script type="text/javascript" src="js/grid.js"></script>
+		<script type="text/javascript" src="js/grid.extend.js"></script>
+		<script type="text/javascript" src="js/grid.paging.js"></script>
+		<script type="text/javascript" src="js/util.js"></script>
+
+        <script src="../js/index.js"></script>
+        <script src="../js/shopment.js"></script>
+</head>
+<body>
+<div class="center">
+    <div class="col-main">
+        <div class="main-wrap add-collection">
+
+            <div class="user-order">
+
+                <!--标题 -->
+                <div class="am-cf am-padding">
+                    <div class="am-fl am-cf">
+                        <strong class="am-text-danger main-title am-text-lg">我的店铺</strong>
+
+
+                    </div>
+                    <div class='fr'><a href="details__2.html">详情</a>|<a href="editors.html">编辑</a>|<a href="upgrade.html">升级</a></div>
+                </div>
+
+
+                <hr>
+                <!--主体-->
+
+                <!--<table id="searchTable">
+                      <tr>
+                        <th w_index="storePortrait" width="16%">店铺logo</th>
+                        <th w_index="storename" width="14%">店铺名称</th>
+                        <th w_index="mianProducts" width="14%">店铺主营</th>
+                        <th w_index="tsrkid" width="14%">店铺级别</th>                
+                        <th w_render="openTime" width="14%">开店时间</th>
+                        <th w_render="deadline" width="14%">年费到期时间</th>
+                        
+
+                    </tr>
+                   
+             </table>-->
+             <table id="shop_info" class="shopment">
+
+                    <tr>
+                        <td class="shop-logo"><span>店铺logo</span></td>
+                        	
+                        <td>
+                            <div id="grxxtu"><img  >
+                              </div>
+                        </td>
+                        	</div>
+                    </tr>
+                    <tr>
+                        <td>店铺名称</td>
+                        <td><input type="text" id ="storename" readonly/></td>
+                    </tr>
+                    <tr>
+                        <td>店铺主营</td>
+                        <td><input type="text" id ="mianProducts" readonly/></td>
+                    </tr>
+                    <!--<tr>
+                        <td>店铺级别</td>
+                        <td><input type="text" id ="rankname" readonly/></td>
+                    </tr>
+                    <tr>
+                        <td>开店时间</td>
+                        <td><input type="text" id ="openTime" readonly/></td>
+                    </tr>
+                    <tr>
+                        <td>年费到期时间</td>
+                        <td><input type="text" id ="deadline" readonly/></td>
+                    </tr>-->
+
+                </table>
+
+                <a class="kaidian" href="newshop.html" >我要开店</a>
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+   	<div id="page1"></div>
+		<script>
+        
+          $("#page1").load("index.html");
+           </script>
+</body>
+
+</html>
